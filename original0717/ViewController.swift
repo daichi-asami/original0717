@@ -27,33 +27,35 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
     @IBOutlet var blackSevenButton: UIButton!
     @IBOutlet var blackEightButton: UIButton!
     @IBOutlet var blackNineButton: UIButton!
+    @IBOutlet var twopointButton: UIButton!
+    @IBOutlet var threepointButton: UIButton!
     
     
-    var number4: Int = 0
-    var number5: Int = 0
-    var number6: Int = 0
-    var number7: Int = 0
-    var number8: Int = 0
-    var number9: Int = 0
-    var number10: Int = 0
-    var number11: Int = 0
-    var number12: Int = 0
-    var number13: Int = 0
-    var number14: Int = 0
-    var number15: Int = 0
-    var number16: Int = 0
-    var number28: Int = 0
-    var number29: Int = 0
-    var number30: Int = 0
-    var number31: Int = 0
-    var number32: Int = 0
-    var number33: Int = 0
-    var number34: Int = 0
-    var number35: Int = 0
-    var number36: Int = 0
-    var number37: Int = 0
-    var number38: Int = 0
-    var number39: Int = 0
+    var number2pok4: Int = 0
+    var number2pok5: Int = 0
+    var number2pok6: Int = 0
+    var number2pok7: Int = 0
+    var number2pok8: Int = 0
+    var number2pok9: Int = 0
+    var number2pno4: Int = 0
+    var number2pno5: Int = 0
+    var number2pno6: Int = 0
+    var number2pno7: Int = 0
+    var number2pno8: Int = 0
+    var number2pno9: Int = 0
+    var number2p3pjudge: Int = 0
+    var number3pok4: Int = 0
+    var number3pok5: Int = 0
+    var number3pok6: Int = 0
+    var number3pok7: Int = 0
+    var number3pok8: Int = 0
+    var number3pok9: Int = 0
+    var number3pno4: Int = 0
+    var number3pno5: Int = 0
+    var number3pno6: Int = 0
+    var number3pno7: Int = 0
+    var number3pno8: Int = 0
+    var number3pno9: Int = 0
     
     
     
@@ -65,35 +67,36 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toSecond" {
             let resultViewContoroller = segue.destination as! ResultViewController
-            resultViewContoroller.number4 = number4
-            resultViewContoroller.number5 = number5
-            resultViewContoroller.number6 = number6
-            resultViewContoroller.number7 = number7
-            resultViewContoroller.number8 = number8
-            resultViewContoroller.number9 = number9
-            resultViewContoroller.number10 = number10
-            resultViewContoroller.number11 = number11
-            resultViewContoroller.number12 = number12
-            resultViewContoroller.number13 = number13
-            resultViewContoroller.number14 = number14
-            resultViewContoroller.number15 = number15
-            resultViewContoroller.number28 = number28
-            resultViewContoroller.number29 = number29
-            resultViewContoroller.number30 = number30
-            resultViewContoroller.number31 = number31
-            resultViewContoroller.number32 = number32
-            resultViewContoroller.number33 = number33
-            resultViewContoroller.number34 = number34
-            resultViewContoroller.number35 = number35
-            resultViewContoroller.number36 = number36
-            resultViewContoroller.number37 = number37
-            resultViewContoroller.number38 = number38
-            resultViewContoroller.number39 = number39
+            resultViewContoroller.number2pok4 = number2pok4
+            resultViewContoroller.number2pok5 = number2pok5
+            resultViewContoroller.number2pok6 = number2pok6
+            resultViewContoroller.number2pok7 = number2pok7
+            resultViewContoroller.number2pok8 = number2pok8
+            resultViewContoroller.number2pok9 = number2pok9
+            resultViewContoroller.number2pno4 = number2pno4
+            resultViewContoroller.number2pno5 = number2pno5
+            resultViewContoroller.number2pno6 = number2pno6
+            resultViewContoroller.number2pno7 = number2pno7
+            resultViewContoroller.number2pno8 = number2pno8
+            resultViewContoroller.number2pno9 = number2pno9
+            resultViewContoroller.number3pok4 = number3pok4
+            resultViewContoroller.number3pok5 = number3pok5
+            resultViewContoroller.number3pok6 = number3pok6
+            resultViewContoroller.number3pok7 = number3pok7
+            resultViewContoroller.number3pok8 = number3pok8
+            resultViewContoroller.number3pok9 = number3pok9
+            resultViewContoroller.number3pno4 = number3pno4
+            resultViewContoroller.number3pno5 = number3pno5
+            resultViewContoroller.number3pno6 = number3pno6
+            resultViewContoroller.number3pno7 = number3pno7
+            resultViewContoroller.number3pno8 = number3pno8
+            resultViewContoroller.number3pno9 = number3pno9
             
         }
     }
@@ -128,148 +131,153 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
     @IBAction func toSecond(_ sender: UIButton) {
 //        画面遷移させたいボタンの中に書く
         self.performSegue(withIdentifier: "toSecond", sender: labelkari.text) // sender で指定したものを渡せる
+//        self.performSegue(withIdentifier: "toSecond", sender: nil) // sender で指定したものを渡せる
     }
     
     
     @IBAction func threepoint(){
-        number16 = 1
+        number2p3pjudge = 1
+        clearAllBackgroundColor()
+        self.threepointButton.backgroundColor = UIColor.green
     }
     @IBAction func twopoint(){
-        number16 = 0
+        number2p3pjudge = 0
+        clearAllBackgroundColor()
+        self.twopointButton.backgroundColor = UIColor.green
     }
     
     @IBAction func selectedFirst(){
-        if number16 == 1 {
-            number28 = number28 + 1
+        if number2p3pjudge == 1 {
+            number3pok4 = number3pok4 + 1
         }else{
-            number4 = number4 + 1
+            number2pok4 = number2pok4 + 1
         }
         clearAllBackgroundColor()
         imageIndex = 1
-        labelkari.text = String(number4)
+        labelkari.text = String(number2pok4)
         self.redFourButton.backgroundColor = UIColor.green
     }
    
     
     @IBAction func selectedSecond(){
-        if number16 == 1 {
-            number29 = number29 + 1
+        if number2p3pjudge == 1 {
+            number3pok5 = number3pok5 + 1
         }else{
-            number5 = number5 + 1
+            number2pok5 = number2pok5 + 1
         }
         clearAllBackgroundColor()
         imageIndex = 2
-        labelkari.text = String(number4)
+        labelkari.text = String(number2pok4)
         self.redFiveButton.backgroundColor = UIColor.green
     }
     @IBAction func selectedThird(){
-        if number16 == 1 {
-            number30 = number30 + 1
+        if number2p3pjudge == 1 {
+            number3pok6 = number3pok6 + 1
         }else{
-            number6 = number6 + 1
+            number2pok6 = number2pok6 + 1
         }
         clearAllBackgroundColor()
         imageIndex = 3
-        labelkari.text = String(number4)
+        labelkari.text = String(number2pok4)
         self.redSixButton.backgroundColor = UIColor.green
     }
     @IBAction func selectedFourth(){
-        if number16 == 1 {
-            number31 = number31 + 1
+        if number2p3pjudge == 1 {
+            number3pok7 = number3pok7 + 1
         }else{
-            number7 = number7 + 1
+            number2pok7 = number2pok7 + 1
         }
         clearAllBackgroundColor()
         imageIndex = 4
-        labelkari.text = String(number4)
+        labelkari.text = String(number2pok4)
         self.redSevenButton.backgroundColor = UIColor.green
     }
     @IBAction func selected5(){
-        if number16 == 1 {
-            number32 = number32 + 1
+        if number2p3pjudge == 1 {
+            number3pok8 = number3pok8 + 1
         }else{
-            number8 = number8 + 1
+            number2pok8 = number2pok8 + 1
         }
         clearAllBackgroundColor()
         imageIndex = 5
-        labelkari.text = String(number4)
+        labelkari.text = String(number2pok4)
         self.redEightButton.backgroundColor = UIColor.green
     }
     @IBAction func selected6(){
-        if number16 == 1 {
-            number33 = number33 + 1
+        if number2p3pjudge == 1 {
+            number3pok9 = number3pok9 + 1
         }else{
-            number9 = number9 + 1
+            number2pok9 = number2pok9 + 1
         }
         clearAllBackgroundColor()
         imageIndex = 6
-        labelkari.text = String(number4)
+        labelkari.text = String(number2pok4)
         self.redNineButton.backgroundColor = UIColor.green
     }
     @IBAction func selected7(){
-        if number16 == 1 {
-            number34 = number34 + 1
+        if number2p3pjudge == 1 {
+            number3pno4 = number3pno4 + 1
         }else{
-            number10 = number10 + 1
+            number2pno4 = number2pno4 + 1
         }
         clearAllBackgroundColor()
         imageIndex = 7
-        labelkari2.text = String(number5)
+        labelkari2.text = String(number2pok5)
         self.blackFourButton.backgroundColor = UIColor.green
     }
     @IBAction func selected8(){
-        if number16 == 1 {
-            number35 = number35 + 1
+        if number2p3pjudge == 1 {
+            number3pno5 = number3pno5 + 1
         }else{
-            number11 = number11 + 1
+            number2pno5 = number2pno5 + 1
         }
         clearAllBackgroundColor()
         imageIndex = 8
-        labelkari2.text = String(number5)
+        labelkari2.text = String(number2pok5)
         self.blackFiveButton.backgroundColor = UIColor.green
     }
     @IBAction func selected9(){
-        if number16 == 1 {
-            number36 = number36 + 1
+        if number2p3pjudge == 1 {
+            number3pno6 = number3pno6 + 1
         }else{
-            number12 = number12 + 1
+            number2pno6 = number2pno6 + 1
         }
         clearAllBackgroundColor()
         imageIndex = 9
-        labelkari2.text = String(number5)
+        labelkari2.text = String(number2pok5)
         self.blackSixButton.backgroundColor = UIColor.green
     }
     @IBAction func selected10(){
-        if number16 == 1 {
-            number37 = number37 + 1
+        if number2p3pjudge == 1 {
+            number3pno7 = number3pno7 + 1
         }else{
-            number13 = number13 + 1
+            number2pno7 = number2pno7 + 1
         }
         clearAllBackgroundColor()
         imageIndex = 10
-        labelkari2.text = String(number5)
+        labelkari2.text = String(number2pok5)
         self.blackSevenButton.backgroundColor = UIColor.green
     }
     @IBAction func selected11(){
-        if number16 == 1 {
-            number38 = number38 + 1
+        if number2p3pjudge == 1 {
+            number3pno8 = number3pno8 + 1
         }else{
-            number14 = number14 + 1
+            number2pno8 = number2pno8 + 1
         }
         clearAllBackgroundColor()
         imageIndex = 11
-        labelkari2.text = String(number5)
+        labelkari2.text = String(number2pok5)
         self.blackEightButton.backgroundColor = UIColor.green
     }
     @IBAction func selected12(){
-        if number16 == 1 {
-            number39 = number39 + 1
+        if number2p3pjudge == 1 {
+            number3pno9 = number3pno9 + 1
         }else{
-            number15 = number15 + 1
+            number2pno9 = number2pno9 + 1
         }
         clearAllBackgroundColor()
         imageIndex = 12
-        labelkari2.text = String(number5)
+        labelkari2.text = String(number2pok5)
         self.blackNineButton.backgroundColor = UIColor.green
     }
     func imageRemove(){
@@ -291,32 +299,32 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
     @IBAction func clear(){
         imageRemove()
         clearAllBackgroundColor()
-        number4 = 0
-        number5 = 0
-        number6 = 0
-        number7 = 0
-        number8 = 0
-        number9 = 0
-        number10 = 0
-        number11 = 0
-        number12 = 0
-        number13 = 0
-        number14 = 0
-        number15 = 0
-        number28 = 0
-        number29 = 0
-        number30 = 0
-        number31 = 0
-        number32 = 0
-        number33 = 0
-        number34 = 0
-        number35 = 0
-        number36 = 0
-        number37 = 0
-        number38 = 0
-        number39 = 0
-        labelkari.text = String(number4)
-        labelkari2.text = String(number5)
+        number2pok4 = 0
+        number2pok5 = 0
+        number2pok6 = 0
+        number2pok7 = 0
+        number2pok8 = 0
+        number2pok9 = 0
+        number2pno4 = 0
+        number2pno5 = 0
+        number2pno6 = 0
+        number2pno7 = 0
+        number2pno8 = 0
+        number2pno9 = 0
+        number3pok4 = 0
+        number3pok5 = 0
+        number3pok6 = 0
+        number3pok7 = 0
+        number3pok8 = 0
+        number3pok9 = 0
+        number3pno4 = 0
+        number3pno5 = 0
+        number3pno6 = 0
+        number3pno7 = 0
+        number3pno8 = 0
+        number3pno9 = 0
+        labelkari.text = String(number2pok4)
+        labelkari2.text = String(number2pok5)
         
     }
 //    @IBAction func selectBackground(){
@@ -332,13 +340,18 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
     
     @IBAction func save(){
         let rect:CGRect = CGRect(x:0, y:30, width:375, height:348)
-        UIGraphicsBeginImageContext(rect.size)
-        self.view.layer.render(in: UIGraphicsGetCurrentContext()!)
-        let capture = UIGraphicsGetImageFromCurrentImageContext()
+        
+        UIGraphicsBeginImageContextWithOptions(rect.size, false, 0.0)
+        
+        self.view.drawHierarchy(in: self.view.bounds, afterScreenUpdates: true)
+        
+        let capture: UIImage = UIGraphicsGetImageFromCurrentImageContext()!
+        
         UIGraphicsEndImageContext()
         
-        UIImageWriteToSavedPhotosAlbum(capture!, nil, nil, nil)
+        UIImageWriteToSavedPhotosAlbum(capture, nil, nil, nil)
     }
+    
     
     func clearAllBackgroundColor() {
         self.redFourButton.backgroundColor = UIColor.clear
@@ -353,6 +366,8 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
         self.blackSevenButton.backgroundColor = UIColor.clear
         self.blackEightButton.backgroundColor = UIColor.clear
         self.blackNineButton.backgroundColor = UIColor.clear
+        self.twopointButton.backgroundColor = UIColor.yellow
+        self.threepointButton.backgroundColor = UIColor.yellow
     }
 }
 

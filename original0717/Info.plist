@@ -28,6 +28,8 @@
 	<string>photoライブラリに画像を保存します</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>photoライブラリから画像を呼び出します</string>
+	<key>NSCameraUsageDescription</key>
+	<string>画像を保存します</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

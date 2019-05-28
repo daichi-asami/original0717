@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -64,14 +64,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6gF-aO-XFo">
-                                <rect key="frame" x="0.0" y="626" width="4" height="6"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mLw-Z3-Wfx">
-                                <rect key="frame" x="0.0" y="626" width="4" height="8"/>
+                                <rect key="frame" x="0.0" y="626" width="33" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -135,53 +128,40 @@
                                 <rect key="frame" x="-1" y="34" width="375" height="348"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" distribution="fillEqually" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="8ms-N7-iJM">
-                                <rect key="frame" x="41" y="602" width="292" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gXZ-1B-0EJ">
+                                <rect key="frame" x="138" y="586" width="99" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gXZ-1B-0EJ">
-                                        <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
-                                        <color key="backgroundColor" red="1" green="0.91780125769999998" blue="0.46023918959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <state key="normal" title="戻る">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="back" destination="BYZ-38-t0r" eventType="touchUpInside" id="Etp-9h-b2k"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PjU-g0-D5M">
-                                        <rect key="frame" x="82" y="0.0" width="46" height="30"/>
-                                        <color key="backgroundColor" red="1" green="0.9178012577178184" blue="0.46023918956245014" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <state key="normal" title="全削除">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="clear" destination="BYZ-38-t0r" eventType="touchUpInside" id="G3U-BT-HPs"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5FU-Ih-bql">
-                                        <rect key="frame" x="164" y="0.0" width="46" height="30"/>
-                                        <color key="backgroundColor" red="1" green="0.91780125769999998" blue="0.46023918959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <state key="normal" title="保存">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="save" destination="BYZ-38-t0r" eventType="touchUpInside" id="vMk-tW-EVy"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eJZ-dC-URF">
-                                        <rect key="frame" x="246" y="0.0" width="46" height="30"/>
-                                        <color key="backgroundColor" red="1" green="0.91780125769999998" blue="0.46023918959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <state key="normal" title="表示">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="toSecond:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oST-F9-bUf"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
+                                <color key="backgroundColor" red="1" green="0.91780125769999998" blue="0.46023918959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="戻る">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="back" destination="BYZ-38-t0r" eventType="touchUpInside" id="Etp-9h-b2k"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PjU-g0-D5M">
+                                <rect key="frame" x="25" y="625" width="75" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.9178012577178184" blue="0.46023918956245014" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="全削除">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="clear" destination="BYZ-38-t0r" eventType="touchUpInside" id="G3U-BT-HPs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5FU-Ih-bql">
+                                <rect key="frame" x="138" y="625" width="99" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.91780125769999998" blue="0.46023918959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="保存">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="save" destination="BYZ-38-t0r" eventType="touchUpInside" id="vMk-tW-EVy"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8J0-FI-MT3">
                                 <rect key="frame" x="25" y="479" width="30" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -190,26 +170,56 @@
                                     <action selector="selected7" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hee-dX-GCR"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mLw-Z3-Wfx">
+                                <rect key="frame" x="0.0" y="586" width="33" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aWD-7j-0N6">
-                                <rect key="frame" x="231" y="545" width="60" height="33"/>
+                                <rect key="frame" x="211" y="545" width="122" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.91780125769999998" blue="0.46023918959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="３P">
+                                <fontDescription key="fontDescription" name="OriyaSangamMN" family="Oriya Sangam MN" pointSize="17"/>
+                                <state key="normal" title="3P">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="threepoint" destination="BYZ-38-t0r" eventType="touchUpInside" id="byb-Xx-2SR"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LcQ-ED-4rk">
-                                <rect key="frame" x="87" y="545" width="60" height="33"/>
+                                <rect key="frame" x="41" y="545" width="122" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.91780125769999998" blue="0.46023918959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="２P">
+                                <fontDescription key="fontDescription" name="OriyaSangamMN" family="Oriya Sangam MN" pointSize="17"/>
+                                <state key="normal" title="2P">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="twopoint" destination="BYZ-38-t0r" eventType="touchUpInside" id="Aba-eV-YtV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eJZ-dC-URF">
+                                <rect key="frame" x="284" y="625" width="75" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.91780125769999998" blue="0.46023918959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="表示">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="twopoint" destination="BYZ-38-t0r" eventType="touchUpInside" id="Aba-eV-YtV"/>
+                                    <action selector="toSecond:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oST-F9-bUf"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -224,14 +234,16 @@
                         <outlet property="blackSevenButton" destination="pdz-yG-RFZ" id="mmd-cH-Elo"/>
                         <outlet property="blackSixButton" destination="RpH-Gb-Gzo" id="CLc-7Z-nVd"/>
                         <outlet property="labelkari" destination="6gF-aO-XFo" id="984-QR-qx3"/>
-                        <outlet property="labelkari2" destination="mLw-Z3-Wfx" id="r1T-a6-y1g"/>
+                        <outlet property="labelkari2" destination="mLw-Z3-Wfx" id="jsR-db-TOb"/>
                         <outlet property="redEightButton" destination="fE0-rh-jSM" id="uMp-fR-mMd"/>
                         <outlet property="redFiveButton" destination="3bt-YR-OMQ" id="phL-nj-4uX"/>
                         <outlet property="redFourButton" destination="xoJ-DV-nZ5" id="TYH-K6-iqr"/>
                         <outlet property="redNineButton" destination="zMZ-s9-CZP" id="K7F-rd-Qci"/>
                         <outlet property="redSevenButton" destination="cKx-AH-FVy" id="wSz-KP-CkA"/>
                         <outlet property="redSixButton" destination="Jbq-QI-bwr" id="APn-SQ-JSd"/>
+                        <outlet property="threepointButton" destination="aWD-7j-0N6" id="GVv-h1-tCx"/>
                         <outlet property="touchAreaView" destination="nLn-SD-Z1p" id="lLi-JU-KO1"/>
+                        <outlet property="twopointButton" destination="LcQ-ED-4rk" id="eZG-Oe-4Rg"/>
                         <segue destination="mW0-Ks-QeH" kind="presentation" identifier="toSecond" id="dN6-AQ-RGu"/>
                     </connections>
                 </viewController>
@@ -254,6 +266,11 @@
                                 <state key="normal" title="Back">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="back" destination="mW0-Ks-QeH" eventType="touchUpInside" id="F0y-oP-w34"/>
                                 </connections>
@@ -741,48 +758,49 @@
                         <viewLayoutGuide key="safeArea" id="XR0-yH-XiX"/>
                     </view>
                     <connections>
-                        <outlet property="label10" destination="K51-6u-9Js" id="YZY-2k-FHe"/>
-                        <outlet property="label11" destination="bVY-b6-1uH" id="h2V-Nx-NuD"/>
-                        <outlet property="label12" destination="Pt7-Gi-CJr" id="JRu-eA-Xcg"/>
-                        <outlet property="label13" destination="Qcs-jK-4Ox" id="qxV-84-gt1"/>
-                        <outlet property="label14" destination="1Jv-m5-Q6o" id="sox-lr-ivx"/>
-                        <outlet property="label15" destination="71v-1B-B8K" id="rKr-cR-3en"/>
-                        <outlet property="label16" destination="Hmr-K5-Qg3" id="77w-Cs-MTF"/>
-                        <outlet property="label17" destination="Uvw-qj-9c9" id="gaS-he-lXN"/>
-                        <outlet property="label18" destination="0Cv-Ad-f6b" id="ds6-Re-DG1"/>
-                        <outlet property="label19" destination="ZU9-iB-AH3" id="fQm-9e-ILJ"/>
-                        <outlet property="label20" destination="nN9-Rx-CrN" id="J7b-4Y-7wm"/>
-                        <outlet property="label21" destination="d9p-Mp-lNB" id="ZB2-i4-w3o"/>
-                        <outlet property="label22" destination="MyA-Ur-9l2" id="dC7-TP-jLW"/>
-                        <outlet property="label23" destination="hEj-ng-UPc" id="ZX2-SM-dej"/>
-                        <outlet property="label24" destination="UkQ-hI-AlB" id="TRz-Jr-aR0"/>
-                        <outlet property="label25" destination="sNR-gA-Isg" id="WFs-xA-0pg"/>
-                        <outlet property="label26" destination="laj-gD-298" id="TI6-Gb-90Q"/>
-                        <outlet property="label27" destination="gss-LK-olT" id="yXh-nE-hRb"/>
-                        <outlet property="label28" destination="QGL-Hn-VF9" id="3zX-9d-Vun"/>
-                        <outlet property="label29" destination="6wj-h2-0yQ" id="kGm-uQ-YYn"/>
-                        <outlet property="label30" destination="yNQ-gh-2mW" id="npa-Pm-3OX"/>
-                        <outlet property="label31" destination="Gpn-v8-0GA" id="q0b-cn-hMc"/>
-                        <outlet property="label32" destination="OmH-mX-Qxo" id="YvW-2Y-HVp"/>
-                        <outlet property="label33" destination="JE4-WQ-iFp" id="Ynf-Q8-LUs"/>
-                        <outlet property="label34" destination="RDK-2z-pjo" id="36Z-3v-J2L"/>
-                        <outlet property="label35" destination="8ou-ex-POI" id="Blo-qq-rBC"/>
-                        <outlet property="label36" destination="1Fh-eS-rXy" id="d9Y-WS-RvQ"/>
-                        <outlet property="label37" destination="J55-AW-6Y2" id="xwy-cD-AgG"/>
-                        <outlet property="label38" destination="yWV-2O-vIH" id="qpN-Hj-4Vr"/>
-                        <outlet property="label39" destination="W5w-QB-HED" id="h1L-rd-Sni"/>
-                        <outlet property="label4" destination="G5S-l6-R9J" id="F05-6v-gwT"/>
-                        <outlet property="label40" destination="eo9-a8-E1G" id="hWG-Gf-iG9"/>
-                        <outlet property="label41" destination="g6f-6T-iSx" id="gAu-fr-dbU"/>
-                        <outlet property="label42" destination="94m-6Q-i35" id="iXq-H9-JIn"/>
-                        <outlet property="label43" destination="Ze2-08-2XS" id="uJe-BT-8fh"/>
-                        <outlet property="label44" destination="29t-kg-As1" id="tQh-61-4aY"/>
-                        <outlet property="label45" destination="IYA-VG-8VR" id="uc8-f2-zq9"/>
-                        <outlet property="label5" destination="n8J-ig-TvY" id="NPx-XP-7oY"/>
-                        <outlet property="label6" destination="2gn-56-8pf" id="Omh-Le-XI4"/>
-                        <outlet property="label7" destination="6Ae-Ha-2D6" id="61l-i0-mBc"/>
-                        <outlet property="label8" destination="iJM-sC-MU8" id="BAc-W8-UVL"/>
-                        <outlet property="label9" destination="FH1-fV-pzN" id="pek-MA-az9"/>
+                        <outlet property="backbutton" destination="0Gt-MT-6f4" id="3Ov-05-GJd"/>
+                        <outlet property="label2pno4" destination="K51-6u-9Js" id="YZY-2k-FHe"/>
+                        <outlet property="label2pno5" destination="bVY-b6-1uH" id="h2V-Nx-NuD"/>
+                        <outlet property="label2pno6" destination="Pt7-Gi-CJr" id="JRu-eA-Xcg"/>
+                        <outlet property="label2pno7" destination="Qcs-jK-4Ox" id="qxV-84-gt1"/>
+                        <outlet property="label2pno8" destination="1Jv-m5-Q6o" id="sox-lr-ivx"/>
+                        <outlet property="label2pno9" destination="71v-1B-B8K" id="rKr-cR-3en"/>
+                        <outlet property="label2pok4" destination="G5S-l6-R9J" id="F05-6v-gwT"/>
+                        <outlet property="label2pok5" destination="n8J-ig-TvY" id="NPx-XP-7oY"/>
+                        <outlet property="label2pok6" destination="2gn-56-8pf" id="Omh-Le-XI4"/>
+                        <outlet property="label2pok7" destination="6Ae-Ha-2D6" id="61l-i0-mBc"/>
+                        <outlet property="label2pok8" destination="iJM-sC-MU8" id="BAc-W8-UVL"/>
+                        <outlet property="label2pok9" destination="FH1-fV-pzN" id="pek-MA-az9"/>
+                        <outlet property="label3pno4" destination="RDK-2z-pjo" id="36Z-3v-J2L"/>
+                        <outlet property="label3pno5" destination="8ou-ex-POI" id="Blo-qq-rBC"/>
+                        <outlet property="label3pno6" destination="1Fh-eS-rXy" id="d9Y-WS-RvQ"/>
+                        <outlet property="label3pno7" destination="J55-AW-6Y2" id="xwy-cD-AgG"/>
+                        <outlet property="label3pno8" destination="yWV-2O-vIH" id="qpN-Hj-4Vr"/>
+                        <outlet property="label3pno9" destination="W5w-QB-HED" id="h1L-rd-Sni"/>
+                        <outlet property="label3pok4" destination="QGL-Hn-VF9" id="3zX-9d-Vun"/>
+                        <outlet property="label3pok5" destination="6wj-h2-0yQ" id="kGm-uQ-YYn"/>
+                        <outlet property="label3pok6" destination="yNQ-gh-2mW" id="npa-Pm-3OX"/>
+                        <outlet property="label3pok7" destination="Gpn-v8-0GA" id="q0b-cn-hMc"/>
+                        <outlet property="label3pok8" destination="OmH-mX-Qxo" id="YvW-2Y-HVp"/>
+                        <outlet property="label3pok9" destination="JE4-WQ-iFp" id="Ynf-Q8-LUs"/>
+                        <outlet property="labelkakuritu4" destination="MyA-Ur-9l2" id="dC7-TP-jLW"/>
+                        <outlet property="labelkakuritu5" destination="hEj-ng-UPc" id="ZX2-SM-dej"/>
+                        <outlet property="labelkakuritu6" destination="UkQ-hI-AlB" id="TRz-Jr-aR0"/>
+                        <outlet property="labelkakuritu7" destination="sNR-gA-Isg" id="WFs-xA-0pg"/>
+                        <outlet property="labelkakuritu8" destination="laj-gD-298" id="TI6-Gb-90Q"/>
+                        <outlet property="labelkakuritu9" destination="gss-LK-olT" id="yXh-nE-hRb"/>
+                        <outlet property="labeltotal4" destination="Hmr-K5-Qg3" id="77w-Cs-MTF"/>
+                        <outlet property="labeltotal5" destination="Uvw-qj-9c9" id="gaS-he-lXN"/>
+                        <outlet property="labeltotal6" destination="0Cv-Ad-f6b" id="ds6-Re-DG1"/>
+                        <outlet property="labeltotal7" destination="ZU9-iB-AH3" id="fQm-9e-ILJ"/>
+                        <outlet property="labeltotal8" destination="nN9-Rx-CrN" id="J7b-4Y-7wm"/>
+                        <outlet property="labeltotal9" destination="d9p-Mp-lNB" id="ZB2-i4-w3o"/>
+                        <outlet property="labeltotalpoint4" destination="eo9-a8-E1G" id="hWG-Gf-iG9"/>
+                        <outlet property="labeltotalpoint5" destination="g6f-6T-iSx" id="gAu-fr-dbU"/>
+                        <outlet property="labeltotalpoint6" destination="94m-6Q-i35" id="iXq-H9-JIn"/>
+                        <outlet property="labeltotalpoint7" destination="Ze2-08-2XS" id="uJe-BT-8fh"/>
+                        <outlet property="labeltotalpoint8" destination="29t-kg-As1" id="tQh-61-4aY"/>
+                        <outlet property="labeltotalpoint9" destination="IYA-VG-8VR" id="uc8-f2-zq9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wI5-dC-jtA" userLabel="First Responder" sceneMemberID="firstResponder"/>
